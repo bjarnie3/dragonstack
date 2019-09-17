@@ -1,20 +1,19 @@
-const { Router } = require('express');
-const DragonTable = require('../dragon/table');
+const { Router } = require('express')
+const DragonTable = require('./dragon/table')
 
 const router = new Router();
 
-router.get('/new', (req,res, next) => {
-    const dragon = req.app.locals.engine.generation.newDragon();
+router.get('/new', (req, res) => {
+  const dragon = req.app.locals.engine.generation.newDragon()
 
-    DragonTable.storeDragon(dragon)
+  DragonTable.storeDragon(dragon)
     .then(({ dragonId }) => {
-        console.log('dragonId', dragonId);
-
-        dragon.dragonId = dragonId;
-
-        res.json({ dragon });
+      console.log('dragonId', dragonId)
+      dragon.dragonId = dragonId;
+      res.json({ dragon })
     })
-    .catch(error => next(error));
-});
+    .catch((error) => console.error(error))
 
-module.exports = router;
+})
+
+module.exports = router

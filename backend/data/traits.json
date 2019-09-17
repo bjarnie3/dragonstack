@@ -8,17 +8,15 @@
             "blue"
         ]
     },
-
     {
         "type": "pattern",
         "values": [
             "plain",
-            "stripped",
+            "striped",
             "spotted",
             "patchy"
         ]
     },
-
     {
         "type": "build",
         "values": [
@@ -28,7 +26,6 @@
             "skinny"
         ]
     },
-
     {
         "type": "size",
         "values": [

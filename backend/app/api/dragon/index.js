@@ -8,6 +8,7 @@ const DEFAULT_PROPERTIES = {
     },
     get randomTraits() {
         const traits = [];
+
         TRAITS.forEach(TRAIT => {
             const traitType = TRAIT.type;
             const traitValues = TRAIT.values;
@@ -15,10 +16,10 @@ const DEFAULT_PROPERTIES = {
             const traitValue = traitValues[
                 Math.floor(Math.random() * traitValues.length)
             ];
-            
+
             traits.push({ traitType, traitValue });
         });
-        
+
         return traits;
     }
 }
