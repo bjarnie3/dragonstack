@@ -31,3 +31,6 @@ app.use((err, req, res, next) => {
 engine.start();
 
 module.exports = app;
+
+// til að Postgres keyrist þarf að keyra þessa línu
+// export PATH=""/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"";

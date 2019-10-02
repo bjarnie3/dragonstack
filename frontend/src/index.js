@@ -10,7 +10,10 @@ import Root from './components/Root';
 import AccountDragons from './components/AccountDragons';
 import PublicDragons from './components/PublicDragons';
 import { fetchAuthenticated } from './actions/account';
+//import createBrowserHistory from 'history/createBrowserHistory';
 import './index.css';
+
+//const history = createBrowserHistory();
 
 const store = createStore(
   rootReducer,
@@ -41,4 +44,5 @@ store.dispatch(fetchAuthenticated())
         </Router>
       </Provider>,
       document.getElementById('root')
-    )
+    );
+  });

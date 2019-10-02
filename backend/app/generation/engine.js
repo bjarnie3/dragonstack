@@ -36,4 +36,4 @@ class GenerationEngine {
   }
 }
 
-module.exports = GenerationTable;
+module.exports = GenerationEngine;

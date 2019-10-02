@@ -41,3 +41,5 @@ class Generation {
     return new Dragon({ generationId: this.generationId });
   }
 }
+
+module.exports = Generation;  

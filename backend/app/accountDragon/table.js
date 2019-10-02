@@ -57,18 +57,16 @@ class AccountDragonTable {
     });
   }
 }
-/*
+
 AccountDragonTable.storeAccountDragon({
   accountId: 1, dragonId: 3
 }).then(() => console.log('stored account dragon'))
   .catch(error => console.error('error', error));
 
   // prufutest: node app/accountDragon/table.js
-  */
-/*
+
   AccountDragonTable.getAccountDragons({ accountId: 1})
     .then(({ accountDragons }) => console.log('accountDragons', accountDragons))
     .catch(error => console.log('error', error));
-    */
    
 module.exports = AccountDragonTable;

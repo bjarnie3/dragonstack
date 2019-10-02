@@ -7,6 +7,7 @@
     "start": "node ./bin/server",
     "dev": "nodemon ./bin/server",
     "configure": "./bin/configure_db.sh",
+    "export": "skoða app/index.js",
     "configure-dev": "npm run configure && npm run dev"
   },
   "author": "",
